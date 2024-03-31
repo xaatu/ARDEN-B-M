@@ -1,0 +1,229 @@
+
+   
+
+
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, input, textarea, button {
+    font-family:'Courier New', Courier, monospace;
+    font-weight:lighter;
+    
+}
+
+
+
+img {
+    max-width: 50%; 
+    height: auto; 
+    
+}
+
+
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color:#000000
+    
+}
+
+header {
+    
+header {
+    background-color: #333;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+
+}
+
+header h2 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: auto; 
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight:lighter;
+    padding: 2px;
+    list-style: none;
+
+    background-color: #666; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(249, 113, 113, 0.1); 
+}
+
+}
+
+
+    
+
+
+h1 {
+    margin: 0;
+    color:#000000
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #666;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+#movement .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+}
+
+#movement .grid-item {
+    text-align: center;
+}
+
+#movement .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+#movement .grid-item p {
+    margin: 5px 0;
+}
+
+#mindfulness .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+}
+
+#mindfulness .grid-item {
+    text-align: center;
+}
+
+#mindfulness .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+#mindfulness .grid-item p {
+    margin: 5px 0;
+}
+
+#movement .grid-item p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    margin: 0 10px; 
+}
+
+.social-media img {
+    width: 40px;
+    height: auto; 
+}
+
+#contact {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
