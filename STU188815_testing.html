@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ardened Body & Mind Testing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<center>  
+
+    <header>
+        
+        <h1><u>Ardened Body & Mind Testing</u></h1>
+    </header>
+
+    <section id="Web-testing">
+        <h2><u>Text</u></h2>
+        <p>Correct spelling & Readability</p>
+        <p>By running all of my text through Grammarly's spell checker, I noticed a few minor errors in my text.</p>
+        <img src="images/grammarly.png" alt="Grammarly error">
+        <p>The first was an un-hyphenated version of well-being</p>
+        <img src="images/grammarly2.png" alt="Grammarly error 2">
+        <p>The second was a lower-case t in YouTube</p>
+        <p>I corrected the errors then checked my overall score</p>
+        <img src="images/grammarly3.png" alt="Grammarly check">
+        <p>While I am happy with a text score of 95, meaning there are no spelling or punctuation errors, the readability score is 53 in the Flesch reading ease test, so my aim is to reduce the average word length and try to raise that score to around 60, as that would mean a larger demographic will be able to engage with the website.</p>
+        <img src="images/grammarly4.png" alt="Grammarly fix">
+        <p>I was able to increase the score to 57, but felt any further reduction in sentence length or word length could be detrimental to the websites overall feel, especially given the fact that many of the page names (Movement, Mindfulness, Motivation etc.) are longer words, and are often repeated.  </p>
+        <p>Finally i checked the correctness of the ALT text on images, and found no errors.</p>
+
+        <h2><u>Hyperlinks</u></h2>
+        <p>I checked each link and made sure it reached the correct destination</p>
+        <p>All hyperlinks are displaying and working correctly</p>
+        <img src="images/hyperlinks.png" alt="Hyperlinks">
+        <p>All open the page in a separate tab to keep the user on the website.</p>
+
+        <h2><u>Graphics</u></h2>
+        <p>All graphics load and display correctly</p>
+        <p>no graphics are missing, or incorrectly named</p>
+        <p>where text and graphics are both present, a grid container has been used to assure text wraps appropriately when the window is resized.</p>
+        <p>I tested the page display speed, and other metrics, using Chrome's "Lighthouse" feature, and the results for Desktop are below:</p>
+        <img src="images/lighthouse.png" alt="Lighthouse score">
+        <p>The speed index was 0.3s</p>
+        <img src="images/lighthouse1.png" alt="Lighthouse Speed Index">
+        <p>When tested on mobile, a similar score was achieved, but with a slightly slower speed index, shown below.</p>
+        <img src="images/lighthouse3.png" alt="Lighthouse Mobile Speed Index">
+        <p>As you can see, a score of 2.4 seconds still ranks the sites Speed Index in the green colour code, meaning "Good". If I had more time, I would go through each image and optimise it more, but given the time constraints I feel that score is acceptable.</p>
+
+        <h2><u>Forms</u></h2>
+        <p>Forms are positioned properly, or at least how I invisioned them to be.</p>
+        <img src="images/form.png" alt="Contact Form">
+        <p>The fields are the correct size, with the "Message" section slightly larger, as there will likely be more information there than in the previous text boxes.</p>
+        <p>The text boxes expand to fit the width of the page</p>
+        <p>They accept correct data, as shown below:</p>
+        <img src="images/form2.png" alt="Form data accepted">
+        <p>They do not accept incorrect data, as shown below:</p>
+        <img src="images/form1.png" alt="Form data error">
+        <p>They require all fields to be completed, as shown below:</p>
+        <img src="images/form3.png" alt="">
+
+
+    </section>
+
+    <section id="Browser-Desktop-Mobile">
+        <h2><u>Desktop & Mobile testing</u></h2>
+        <h3><u>Mobile Testing</u></h3>
+        <p>To test for mobile screens, I used Chrome's "Inspect" tool, to take advantage of the emulator it provides.</p>
+        <p>Straight away I noticed an error within the header, specifically the navigation.</p>
+        <img src="images/mobile.png" alt="Mobile error">
+        <p>After quite a long time wondering why adding the @media query wasn't working, I realised i had the display set to flex in my nav ul.</p>
+        <p>By creating an alternate display (inline), I was able to create a vertical list of the navigation list, whenever the display size width fell below 600px</p>
+        <img src="images/mobile1.png" alt="Mobile fix">
+        <p>This resulted in a much better UI for mobile</p>
+        <img src="images/mobile2.png" alt="New mobile UI">
+
+        <h3><u>Desktop Testing</u></h3>
+        <p>When testing the desktop display, again I used Chrome's "Inspect" tool.</p>
+        <p>I found no initial problems when checking pages, but then as i started to adjust the screen size I ran into an issue.</p>
+        <img src="images/desktop.png" alt="Desktop Error">
+        <p>I had a similar problem to the one I had encountered on Mobile, only this time, the problem happened within a very specific width window.</p>
+        <p>The navigation text boxes were overlapping</p>
+        <p>After some testing I was able to recreate the problem, and ascertain the exact pixel width that the error occurred.</p>
+        <img src="images/desktop1.png" alt="Desktop Fix">
+        <p>By adjusting the max-width within the @media query to 730px (giving some extra leeway) i was able to solve the problem and turn the navigation list into a vertical list, which will be more user friendly for anyone using the website on a second browser window or where it may be a smaller screen.</p>
+        <img src="images/desktop2.png" alt="Desktop Fixed">
+
+
+        <h2><u>Browser Testing</u></h2>
+        <h3><u>Chrome</u></h3>
+        <p>Initial browser testing was on Chrome, as that was the browser I had been working on throughout.</p>
+        <p>Throughout testing I never encountered any issues with Chrome</p>
+        <h3><u>Safari</u></h3>
+        <p>As this was my first time opening Safari in a long time, I anticipated it would take a while to load</p>
+        <img src="images/safari.png" alt="Safari">
+        <p>Upon loading, I checked each page, filled out forms and checked the table and JS Quote script and all were working perfectly. </p>
+        <p>Initial load time was a few seconds, about what I expected given Safari hasn't been opened in years.</p>
+        <p>When I relauched it, the page launched as quickly as I would expect in Chrome.</p>
+        <h3><u>Opera GX</u></h3>
+        <p>Again with Opera GX, I hadn't opened it in a while, so expected a slow load time; but the page was up immediately.</p>
+        <p>I checked all of the pages, forms and tables, then stretched the screen to full size.</p>
+        <img src="images/opera.png" alt="Opera full size">
+        <p>There were no issues at full size so I made the screen much smaller</p>
+        <img src="images/opera1.png" alt="Opera small screen">
+        <p>Again when in a smaller screen there were no issues, and the media query was working perfectly.</p>
+        <h3><u>Firefox</u></h3>
+        <p>With Firefox, I had to download it as I didn't have a version on my laptop. The site loaded instantly and was fully responsive on all pages.</p>
+        <p>I then stretched the screen to full size.</p>
+        <img src="images/Firefox.png" alt="Firefox full size">
+        <p>There were no issues at full size so I made the screen much smaller</p>
+        <img src="images/Firefox1.png" alt="Firefox small screen">
+        <p>Again when in a smaller screen there were no issues, and the media query was working perfectly.</p>
+        <h3><u>Microsoft Edge</u></h3>
+        <p>With Microsoft Edge, I had to download it as I didn't have a version on my laptop. The site loaded instantly and was fully responsive on all pages.</p>
+        <p>I then stretched the screen to full size.</p>
+        <img src="images/edge.png" alt="Edge full size">
+        <p>There were no issues at full size so I made the screen much smaller</p>
+        <img src="images/edge1.png" alt="Edge small screen">
+        <p>Again when in a smaller screen there were no issues, and the media query was working perfectly.</p>
+        <p>Overall I am extremely happy with how well the Desktop, Mobile and Web Browser testing has gone, and the site seems to be running well.</p>
+        
+
+    </section>
+
+    <section id="HTML-validate">
+        <h2><u>HTML Validator</u></h2>
+        <h3><u>index.html (Homepage)</u></h3>
+        <h4>Before:</h4>
+        <p>index.html brought up 2 errors in the HTML Validator, both were Stray end tags</p>
+        <img src="images/HTMLindex.png" alt="HTML Index page">
+        <p>The image below shows the errors in my code</p>
+        <img src="images/HTMLindexstrayendtag.png" alt="HTML Index stray end tag">
+        <p>I removed the 2 stray Section tags</p>
+        <h4>After:</h4>
+        <img src="images/HTMLindexfixed.png" alt="HTML Fixed">
+
+        <h3><u>movement.html</u></h3>
+        <h4>Before:</h4>
+        <p>movement.html brought up 5 errors in the HTML Validator; Open elements, Unclosed Element, Nesting rule violations</p>
+        <img src="images/HTMLmovement.png" alt="HTML Movement page">
+        <p>The images below show the errors in my code</p>
+        <p>Open Elements</p>
+        <img src="images/HTMLmovementerror1.png" alt="Open elements">
+        <p>Unclosed Elements</p>
+        <img src="images/HTMLmovementerror2.png" alt="Unclosed elements">
+        <p>Unclosed Elements</p>
+        <img src="images/HTMLmovementerror3.png" alt="Unclosed elements">
+        <p>I fixed the youtube URL, closed the Main section and removed an unneccesary Div closing</p>
+        <h4>After:</h4>
+        <img src="images/HTMLmovementfixed.png" alt="HTML Fixed">
+
+        <h3><u>mindfulness.html</u></h3>
+        <h4>Before:</h4>
+        <img src="images/HTMLmindfulness.png" alt="HTML mindfulness">
+        <p>mindfulness.html presented no errors on the HTML validator.</p>
+
+        <h3><u>motivation.html</u></h3>
+        <h4>Before:</h4>
+        <p>motivation.html brought up 4 errors in the HTML Validator; Empty heading, not mappable to XML due to consecutive hyphens in a comment, and 2 stray end tags.</p>
+        <img src="images/HTMLmotivation.png" alt="HTML Motivation page">
+        <p>The images below show the errors in my code</p>
+        <p>Empty heading</p>
+        <img src="images/HTMLmotivationerror1.png" alt="empty heading">
+        <p>Hyphen error</p>
+        <img src="images/HTMLmotivationerror2.png" alt="hyphen error">
+        <p>Stray end tag</p>
+        <img src="images/HTMLmotivationerror3.png" alt="stray end tag">
+        <p>I added the heading "Quotes", removed the comment with hyphens, and removed the stray section tags</p>
+        <h4>After:</h4>
+        <img src="images/HTMLmotivationfixed.png" alt="HTML Fixed">
+
+        <h3><u>forum.html</u></h3>
+        <h4>Before:</h4>
+        <img src="images/HTMLforum.png" alt="HTML forum">
+        <p>forum.html presented no errors on the HTML validator.</p>
+
+        <h3><u>openinghours.html</u></h3>
+        <h4>Before:</h4>
+        <p>openinghours.html brought up 3 errors in the HTML Validator; all were stray end tags.</p>
+        <img src="images/HTMLopeninghours.png" alt="HTML opening hours page">
+        <p>The images below show the errors in my code</p>
+        <p>Stray end tag 1</p>
+        <img src="images/HTMLopeninghourserror1.png" alt="stray end tag 1">
+        <p>Stray end tag 2</p>
+        <img src="images/HTMLopeninghourserror2.png" alt="stray end tag 2">
+        <p>Stray end tag 3</p>
+        <img src="images/HTMLopeninghourserror3.png" alt="stray end tag 3">
+        <p>I removed all of the stray end tags</p>
+        <h4>After:</h4>
+        <img src="images/HTMLopeninghoursfixed.png" alt="HTML Fixed">
+
+        <h3><u>contact.html</u></h3>
+        <h4>Before:</h4>
+        <img src="images/HTMLcontact.png" alt="HTML contact">
+        <p>contact.html presented no errors on the HTML validator.</p>
+        
+    </section>
+
+    <section id="CSS-validate">
+        <h2><u>CSS Validator</u></h2>
+        <h4>Before:</h4>
+        <p>styles.css brought up 1 error in the CSS Validator; a Parse error</p>
+        <img src="images/CSSerror.png" alt="CSS Parse error">
+        <p>The image below shows the error in my code</p>
+        <img src="images/CSSerror1.png" alt="parse error">
+        <p>I removed the parse error and reran the CSS Validator</p>
+        <h4>After:</h4>
+        <img src="images/CSSfixed.png" alt="">
+
+
+    </section>
+
+    <section id="WAVE-tool">
+        <h2><u>Wave Web Accessibility Tool</u></h2>
+
+        <h3><u>index.html (Homepage)</u></h3>
+        <img src="images/waveindex.png" alt="wave index">
+        <p>The Wave tool brought up 0 errors, 0 contrast errors and 4 alerts </p>
+        <p>The alerts were: Having text in the logo, having too little information in the alternative text for the image, having no first level heading (for language choice etc.), and for having underlined text.</p>
+        <p>I didn't consider any of these alerts to be particularly alarming. If I had more time and expertise I would incorporate the first level heading so the website could be read in more languages.</p>
+
+        <h3><u>movement.html</u></h3>
+        <img src="images/wavemovement.png" alt="wave movement">
+        <p>The Wave tool brought up 0 errors, 0 contrast errors and 10 alerts </p>
+        <p>The alerts were identical to the previous page for the most part, other than the fact there were more alternative text errors due to there being more pictures.</p>
+        <p>The only other alert not previously seen was one for a "redundant" url link - however this is because I have both a hyperlink to the website within text and a hyperlinked logo, and I feel it best to give the user the option, especially given that the demographic I designed it for may not be as technologically adept.</p>
+        <img src="images/wavemovement1.png" alt="wave movement error">
+
+        <h3><u>mindfulness.html</u></h3>
+        <img src="images/wavemindfulness.png" alt="wave mindfulness">
+        <p>The wave tool brought up 0 errors, 0 contrast errors and 7 alerts</p>
+        <p>The alerts were identical to previous pages, and consisted mainly of alternative image text alerts.</p>
+
+        <h3><u>motivation.html</u></h3>
+        <img src="images/wavemotivation.png" alt="wave motivation">
+        <p>The wave tool brought up 0 errors, 0 contrast errors and 3 alerts</p>
+        <p>The alerts were identical to previous pages with which I decided no changes were necessary.</p>
+
+        <h3><u>forum.html</u></h3>
+        <img src="images/wavecommunity.png" alt="wave community/forum">
+        <p>The wave tool brought up 0 errors, 0 contrast errors and 4 alerts</p>
+        <p>The alerts were identical to previous pages with which I decided no changes were necessary.</p>
+
+        <h3><u>openinghours.html</u></h3>
+        <img src="images/waveopeninghours.png" alt="wave opening hours">
+        <p>The wave tool brought up 0 errors, 0 contrast errors and 3 alerts</p>
+        <p>The alerts were identical to previous pages with which I decided no changes were necessary.</p>
+        
+        <h3><u>contact.html</u></h3>
+        <img src="images/wavecontact.png" alt="wave contact">
+        <p>The wave tool brought up 0 errors, 1 contrast error and 3 alerts</p>
+        <p>The alerts were identical to previous pages with which I decided no changes were necessary.</p>
+        <p>The contrast alert confused me at first as all of the pages have the same CSS styling, but when I checked where the error had occurred, it was on the form submit button. </p>
+        <p>Originally when I added this button I chose the colour because I thought it stood out. But i might have to rethink it.</p>
+        <img src="images/wavecontactcontrast.png" alt="wave contact contrast">
+        <p>I decided that as I am using this Wave tool predominantly for general accessibility, I will see what the WebAIM: Contrast Checker says, as I will be looking more specifically at overall contrast issues using that tool.</p>
+
+    </section>
+
+    <section id="WebAIM-contrast-checker">
+        <h2><u>WebAIM: Contrast Checker</u></h2>
+        <p>Upon opening the WebAIM Contrast checker website, I noticed that they actually recommend using WAVE to check contrast across a whole site.</p>
+        <img src="images/webaim.png" alt="Wave recommendation">
+        <p>Given this fact, I think it is only appropriate that I change the colour of the button on my form, as that was the only contrast issue throughout the whole site.</p>
+        <h4>Before:</h4>
+        <img src="images/webaim1.png" alt="Contrast before">
+        <p>I changed the colour of the button to black, or grey when hovered over</p>
+        <img src="images/webaim2.png" alt="Button colour change">
+        <p>This changed the score in both instances to a pass, and visially I think it is more in line with the theme colours of the site.</p>
+        <p>The button as it appears:</p>
+        <img src="images/webaim3.png" alt="Button Black Pass">
+        <p>The button as it appears when hovered over:</p>
+        <img src="images/webaim4.png" alt="Button Hover Grey pass">
+
+
+    </section>
+
+    <section id="Conclusion">
+        <h2><u>Conclusion</u></h2>
+        <p>Overall I am happy with the testing on the website</p>
+        <p>The text is correctly spelled & readable</p>
+        <p>The hyperlinks are all fully functional</p>
+        <p>The graphics load, display and are named correctly</p>
+        <p>The forms are positioned, displayed and perform correctly</p>
+        <p>Desktop displays correctly</p>
+        <p>Mobile phones and smaller devices display correctly</p>
+        <p>The site runs well on all of the browsers I have tested</p>
+        <p>All HTML has been validated and corrected</p>
+        <p>All CSS has been validated and corrected</p>
+        <p>Wave tool has shown no errors, and any significant alerts have been fixed</p>
+        <p>Contrast checker now shows no issues, as the one contrast error has been fixed</p>
+
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 Ardened Body & Mind. All rights reserved.</p>
+    </footer>
+</center>  
+</body>
+</html>
